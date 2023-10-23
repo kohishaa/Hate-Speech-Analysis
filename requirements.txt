@@ -1,6 +1,10 @@
 pandas
 numpy
-matplotlib
 nltk
 scikit-learn
 seaborn
+matplotlib
+keras
+tensorflow
+tensorflow-macos
+tensorflow-metal
