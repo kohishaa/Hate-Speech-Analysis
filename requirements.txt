@@ -6,3 +6,12 @@ seaborn
 matplotlib
 keras
 tensorflow
+transformers
+torch
+torchvision
+lime
+xgboost
+altair==4.0
+streamlit==1.0.0
+tweet-preprocessor
+pandas-profiling
