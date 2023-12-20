@@ -18,32 +18,32 @@ from gensim.models import Word2Vec
 #st.header('*Hate Speech Classification*')
 
 #Countvector
-#model_count_lr= joblib.load('model/count_lr.pkl')
-model_count_dt= joblib.load('model/count_dt.pkl')
-model_count_svm= joblib.load('model/count_svm.pkl')
-model_count_nb= joblib.load('model/count_nb.pkl')
-model_count_rf= joblib.load('model/count_rf.pkl')
+#model_count_lr= joblib.load('finalCapstone/model/count_lr.pkl')
+model_count_dt= joblib.load('finalCapstone/model/count_dt.pkl')
+model_count_svm= joblib.load('finalCapstone/model/count_svm.pkl')
+model_count_nb= joblib.load('finalCapstone/model/count_nb.pkl')
+model_count_rf= joblib.load('finalCapstone/model/count_rf.pkl')
 
 #Word2vec
 
-word2vec = joblib.load('model/word2vec.pkl')
-model_wrdevec_dt= joblib.load('model/word2vecdt.pkl')
-model_wrdevec_svm= joblib.load('model/word2vec_svm.pkl')
-model_wrdevec_gb= joblib.load('model/word2vec_gb.pkl')
-model_wrdevec_nb= joblib.load('model/word2veclr.pkl')
+word2vec = joblib.load('finalCapstone/model/word2vec.pkl')
+model_wrdevec_dt= joblib.load('finalCapstone/model/word2vecdt.pkl')
+model_wrdevec_svm= joblib.load('finalCapstone/model/word2vec_svm.pkl')
+model_wrdevec_gb= joblib.load('finalCapstone/model/word2vec_gb.pkl')
+model_wrdevec_nb= joblib.load('finalCapstone/model/word2veclr.pkl')
 
 #Tfidf
-model_gb= joblib.load('model/gradboostbalanced.pkl')
-model_dt= joblib.load('model/model_dtbalanced.pkl')
-tfidf_vect=joblib.load('model/tfidf50000.pkl')
-model_nb= joblib.load('model/naive_bayesbalanced.pkl')
-model_svm= joblib.load('model/svcmodelbalanced.pkl')
+model_gb= joblib.load('finalCapstone/model/gradboostbalanced.pkl')
+model_dt= joblib.load('finalCapstone/model/model_dtbalanced.pkl')
+tfidf_vect=joblib.load('finalCapstone/model/tfidf50000.pkl')
+model_nb= joblib.load('finalCapstone/model/naive_bayesbalanced.pkl')
+model_svm= joblib.load('finalCapstone/model/svcmodelbalanced.pkl')
 
 #GloVe
 
 
 
-data=pd.read_csv('./src/data.csv')
+data=pd.read_csv('finalCapstone/src/data.csv')
 
 data_clean=data.dropna(subset=['clean_comment_string1'])
 #data_clean=data_clean[:36000]
